@@ -7,10 +7,7 @@ services:
     env_file:
       - .env
     ports:
-      - 3000:3000
-    depends_on:
-      postgres:
-        condition: service_healthy    
+      - 3000:3000    
     restart: always    
 
   
